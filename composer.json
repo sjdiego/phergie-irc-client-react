@@ -9,9 +9,15 @@
         "issues": "https://github.com/phergie/phergie-irc-client-react/issues",
         "source": "https://github.com/phergie/phergie-irc-client-react"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:sjdiego/phergie-irc-parser.git"
+        }
+    ],
     "require": {
-        "php": ">=5.5",
-        "phergie/phergie-irc-parser": "~2.0",
+        "php": ">8.0",
+        "phergie/phergie-irc-parser": "dev-master",
         "phergie/phergie-irc-generator": "~1.5",
         "phergie/phergie-irc-connection": "~2.0",
         "react/event-loop": "^1.0 || ^0.5",
@@ -20,7 +26,7 @@
         "react/dns": "~0.4.0",
         "react/promise": "~2.0",
         "psr/log": "~1.0",
-        "monolog/monolog": "~1.6"
+        "monolog/monolog": "~2.2.0"
     },
     "require-dev": {
         "phergie/phergie-irc-bot-react-development": "~1.0.0"
@@ -40,7 +46,9 @@
     },
     "config": {
         "platform": {
-            "php": "5.5.23"
+            "php": ">=8.0"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": false
 }
